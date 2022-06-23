@@ -1,0 +1,16 @@
+<h2 class="text-center">{{mensaje}}</h2>
+
+
+<div class="row item-productos">
+    {{#each productos}}
+    
+    {{> productos
+        producto = this
+    }}
+    
+    {{/each}}
+</div>
+
+{{!-- Los parciales son estructuras o porciones de código que podemos reutilizar a través de su llamado. --}}
+{{!-- La forma de invocar un partial dentro de una vista es con las doble llaves ( {{ }} ) y con el signo de “mayor” (>). --}}
+{{> modal}}

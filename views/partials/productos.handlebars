@@ -1,0 +1,8 @@
+{{!-- se agregan las imagenes de cada producto desde la funcion en el archivo index.js --}}
+{{!-- tambien se agregan los nombres de cada producto segun el arreglo. --}}
+{{!-- agrego la clase producto, para que mediante jquery se active los eventos clic y dobleclic --}}
+{{!-- ademas, le paso los id de cada producto que se cargaran en el div al estilo tabla. --}}
+<div class="producto col-4 text-center" id="{{producto}}">
+    <img src="/assets/img/{{producto}}.png">
+    <p>{{producto}}</p>
+</div>

@@ -1,0 +1,20 @@
+{{!-- modal que se activa al presionar la imagen del carrito --}}
+<div class="modal fade" id="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel">Productos seleccionados</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            {{!-- agrego el id productos al cuerpo del modal para imprimir las imagenes guardadas en local storage. --}}
+            <div class="modal-body row" id="productos">
+                {{!-- Aqui se imprimiran las imagenes seleccionadas. --}}
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>

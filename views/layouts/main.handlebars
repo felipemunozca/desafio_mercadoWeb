@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {{!-- se agregan los archivos de bootstrap y jquery utilizando las rutas creadas en index.js --}}
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <script src="/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="/jquery/jquery.js"></script>
+
+    {{!-- se agregan los estilos css propios. --}}
+    <link rel="stylesheet" href="/assets/css/estilos.css">
+
+
+    <title>Mercado web</title>
+</head>
+<body>
+    {{!-- se llama al archivo menu.handlebars utilizando el signo mayor > y el nombre del archivo sin extension. --}}
+    {{!-- el nombre escrito tiene que ser igual al del archivo, sino no cargara. --}}
+    {{> menu}}
+
+    <main class="container mt-5 justify-content-center">
+        {{{body}}}
+    </main>
+
+    {{!-- se agregan eventos jquery desarrollado en archivos js. Se cargan al final de la pagina, para evitar errores. --}}
+    <script src="/assets/js/productos.js"></script>
+    <script src="/assets/js/modal.js"></script>
+</body>
+</html>
